@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back_1"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <!--<TextView-->
+        <!--android:id="@+id/titleLogin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="74dp"-->
+        <!--android:fontFamily="cursive"-->
+        <!--android:text="Login"-->
+        <!--android:textAllCaps="true"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Display1"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:textSize="36sp"-->
+        <!--android:textStyle="bold"-->
+        <!--tools:layout_editor_absoluteX="138dp"-->
+        <!--tools:layout_editor_absoluteY="78dp" />-->
+
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewSenha"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="1dp"
+        android:text="E-mail"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <EditText
+        android:id="@+id/editLoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewSenha"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-3dp"
+        android:backgroundTint="@color/com_facebook_button_background_color"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <TextView
+        android:id="@+id/textViewSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editlLoginSenha"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:text="Senha"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <EditText
+        android:id="@+id/editlLoginSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/com_facebook_button_background_color"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnLoginLogar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:text="Login" />
+    <!--<br.com.simplepass.loading_button_lib.customViews.CircularProgressButton-->
+        <!--android:id="@+id/btnLoginBonito"-->
+        <!--android:text="Anima"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/shape_default"-->
+        <!--app:spinning_bar_color="#FFF"-->
+        <!--app:spinning_bar_padding="6dp"-->
+        <!--app:spinning_bar_width="4dp"/>-->
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/btnLoginFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="16dp" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btnLoginGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLoginFacebook"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+    <Button
+        android:id="@+id/btnLoginNovo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@+id/textViewEmail"
+        android:text="Novo Usuario"
+        android:layout_marginTop="16dp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="433dp" />
+
+
+
+
+</LinearLayout>

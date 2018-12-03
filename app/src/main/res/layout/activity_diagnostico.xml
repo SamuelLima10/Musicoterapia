@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/back_1"
+    tools:context=".Diagnostico">
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/imgBtnDiagnosticoNext"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/loadMusic"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginTop="-91dp"-->
+        <!--android:background="@android:color/darker_gray"-->
+        <!--app:srcCompat="@android:drawable/ic_media_next" />-->
+
+    <Button
+        android:id="@+id/btnDiagnosticoAutismo"
+        android:layout_width="142dp"
+        android:layout_height="126dp"
+        android:layout_alignTop="@+id/btnDiagnosticoAnsiedade"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-150dp"
+        android:layout_marginEnd="0dp"
+        android:onClick="play_music_autismo"
+        android:text="Autismo"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDiagnosticoStress"
+        android:layout_width="142dp"
+        android:layout_height="126dp"
+        android:layout_alignTop="@+id/btnDiagnosticoAnsiedade"
+        android:layout_alignParentEnd="true"
+        android:onClick="play_music_stress"
+        android:text="Stress"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDiagnosticoAnsiedade"
+        android:layout_width="142dp"
+        android:layout_height="126dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="204dp"
+        android:onClick="play_music_ansiedade"
+        android:text="Ansiedade"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btnDiagnosticoParkinson"
+        android:layout_width="142dp"
+        android:layout_height="126dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="55dp"
+        android:onClick="play_music_parkinson"
+        android:text="Parkinson"
+        android:textStyle="bold" />
+
+    <!--<SeekBar-->
+        <!--android:id="@+id/loadMusic"-->
+        <!--android:layout_width="283dp"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="91dp" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:fontFamily="sans-serif"
+            android:text="Selecione seu Diagnóstico"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <SeekBar
+        android:id="@+id/loadMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="91dp" />
+
+
+</RelativeLayout>

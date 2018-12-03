@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Terapia Musical</string>
+    <string name="facebook_app_id">362207474348145</string>
+    <string name="fb_login_protocol_scheme">fb362207474348145</string>
+</resources>

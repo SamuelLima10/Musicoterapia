@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "994155165091",
+    "firebase_url": "https://terapiamusical-4dcf5.firebaseio.com",
+    "project_id": "terapiamusical-4dcf5",
+    "storage_bucket": "terapiamusical-4dcf5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994155165091:android:72517880039d23b8",
+        "android_client_info": {
+          "package_name": "com.terapiamusical.samue.terapiamusical"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994155165091-3rppi78ok2g2ravna9bpkorgmjhk5u8u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.terapiamusical.samue.terapiamusical",
+            "certificate_hash": "339d215d136dc6e0959512c9d3afcec332674d8a"
+          }
+        },
+        {
+          "client_id": "994155165091-mjtva3pkesjkki1bgcvtt273999q1cn9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0PMSkGTd4-XTXXyXCdC5q-0KTHoC6BWc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994155165091-mjtva3pkesjkki1bgcvtt273999q1cn9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
